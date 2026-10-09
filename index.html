@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo fetch Task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-dark">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                   <div class="card-body">
+                     <form id="todoform">
+                        <div class="form-group">
+                            <label for="todoInput">Enter Todo :</label>
+                            <input required type="text" class="form-control" id="todoInput">
+                         </div>
+
+                         <div class="form-group">
+                            <button type="submit" id="addbtn" class="btn btn-block btn-sm btn-primary">Add Todo</button>
+                            <button type="button" id="updatebtn" class="btn btn-block btn-sm btn-primary d-none">Update Todo</button>
+                         </div>
+                     </form>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ul id="todocontainer" >
+                    <!-- <li class="list-group-item d-flex justify-content-between mt-4">
+                        <strong>Html</strong>
+                        <div>
+                            <button type="button" class="btn btn-sm btn-primary">Edit</button>
+                            <button type="button" class="btn btn-sm btn-danger">Delete</button>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<div class="spinner d-none" id="spinner">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+   </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
